@@ -1,0 +1,185 @@
+    {% extends 'base.html' %}
+    {% load static %}
+    {% block content %}
+    <div id="container">
+        <div class="top">
+            <div class="a&span">
+                <a href="{% url 'home' %}">HOME &#62;</a>
+                <span>YOUR SHOPPING CART</span>
+            </div>
+
+            <div class="social_media">
+                <svg width="16" height="16" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>facebook</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> <rect width="48" height="48" fill="none"></rect> </g> <g id="icons_Q2" data-name="icons Q2"> <path d="M44,6.1V41.9a.3.3,0,0,1-.1.2,1.9,1.9,0,0,1-1.8,1.8H31.6V28.5h4.9c.3,0,.3,0,.4-.3l.3-2.5c.1-1,.2-2,.4-3s0-.3-.2-.3H31.6V18.5c0-.3.1-.7.1-1a1.8,1.8,0,0,1,1.6-1.6l1.3-.2h3c.2,0,.2,0,.2-.2V10.4c0-.1,0-.2-.2-.2H33a7.2,7.2,0,0,0-3.3.7A6,6,0,0,0,26.2,14a7.3,7.3,0,0,0-.8,3.6c-.1,1.5,0,3.1,0,4.7H20.3c-.2,0-.2.1-.2.2v5.7c0,.2,0,.2.2.2h5.1V43.8a.3.3,0,0,0-.1.2H5.9a1.9,1.9,0,0,1-1.8-1.8c-.1,0-.1-.1-.1-.2V6.1c0-.1,0-.2.1-.2A1.9,1.9,0,0,1,5.9,4.1H42.1a1.9,1.9,0,0,1,1.8,1.8Z"></path> </g> </g> </g></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#616160"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#616160"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#616160"></path> </g></svg>
+            </div>
+        </div>
+
+
+
+        <div id="all_container">
+            <div class="side">
+                <h2>
+                    Collections
+                </h2>
+                <hr>
+                <a href="#">TOTE BAGS</a>
+                <a href="#">DUFFLE BAGS</a>
+                <a href="#">CROSS BAGS</a>
+                <a href="#">BELTS</a>
+                <a href="#">EVENING BAGS</a>
+                <a href="#">BACKPACKS</a>
+                <a href="#">BELT BAGS</a>
+                <a href="#">LAPTOP BAGS</a>
+                <a href="#">SUMMER BAGS</a>
+                <a href="#">METALIC</a>
+                <div onclick="display_footwear()" id="footwear_side">
+                    <a href="#">FOOTWEAR</a>
+                    <svg onclick="display_footwear()" width="16" height="16" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    <div class="dropdown_side_hidden">
+                        <a href="#">SHOES & BOOTS</a>
+                        <a href="#">MULES & SANDALS</a>
+                        <a href="#">ESPADRILLES</a>
+                        <a href="#">SLIPPERS</a>
+                    </div>
+                </div>
+                <h2>
+                    Filter products
+                </h2>
+                <hr>
+                <div id="floating_buttons">
+                    <button class="floating_button">ALL FOOTWEAR</button>
+                    <button class="floating_button">BACKPACK & BELTBAG</button>
+                    <button class="floating_button">CROSS BAG</button>
+                    <button class="floating_button">DUFFLE BAGS</button>
+                    <button class="floating_button">ESPADRILLES</button>
+                </div>
+            </div>
+    
+    
+            <div class="main">
+                <div class="main_top">
+                    <h2>
+                        New Arrivals
+                    </h2>
+                    <div class="main_top_right">
+                        <span>Sort by</span>
+                        <select name="sort_by" id="sort_by">
+                            <option value="featured">FEATURED</option>
+                            <option value="best_selling">BEST SELLING</option>
+                            <option value="alphabetically_a_to_z">ALPHABETICALLY, A-Z</option>
+                            <option value="alphabetically_z_to_a">ALPHABETICALLY, Z-A</option>
+                            <option value="price_low_to_high">PRICE, LOW TO HIGH</option>
+                            <option value="price_high_to_low">PRICE, HIGH TO LOW</option>
+                            <option value="date_new_to_old" selected>DATE, NEW TO OLD</option>
+                            <option value="date_old_to_new">DATE, OLD TO NEW</option>
+                        </select>
+                        <svg onclick="displayGrid()" class="row_and_grid" width="16" height="16" viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>grid [#1526]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-219.000000, -200.000000)"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M181.9,54 L179.8,54 C178.63975,54 177.7,54.895 177.7,56 L177.7,58 C177.7,59.105 178.63975,60 179.8,60 L181.9,60 C183.06025,60 184,59.105 184,58 L184,56 C184,54.895 183.06025,54 181.9,54 M174.55,54 L172.45,54 C171.28975,54 170.35,54.895 170.35,56 L170.35,58 C170.35,59.105 171.28975,60 172.45,60 L174.55,60 C175.71025,60 176.65,59.105 176.65,58 L176.65,56 C176.65,54.895 175.71025,54 174.55,54 M167.2,54 L165.1,54 C163.93975,54 163,54.895 163,56 L163,58 C163,59.105 163.93975,60 165.1,60 L167.2,60 C168.36025,60 169.3,59.105 169.3,58 L169.3,56 C169.3,54.895 168.36025,54 167.2,54 M181.9,47 L179.8,47 C178.63975,47 177.7,47.895 177.7,49 L177.7,51 C177.7,52.105 178.63975,53 179.8,53 L181.9,53 C183.06025,53 184,52.105 184,51 L184,49 C184,47.895 183.06025,47 181.9,47 M174.55,47 L172.45,47 C171.28975,47 170.35,47.895 170.35,49 L170.35,51 C170.35,52.105 171.28975,53 172.45,53 L174.55,53 C175.71025,53 176.65,52.105 176.65,51 L176.65,49 C176.65,47.895 175.71025,47 174.55,47 M167.2,47 L165.1,47 C163.93975,47 163,47.895 163,49 L163,51 C163,52.105 163.93975,53 165.1,53 L167.2,53 C168.36025,53 169.3,52.105 169.3,51 L169.3,49 C169.3,47.895 168.36025,47 167.2,47 M181.9,40 L179.8,40 C178.63975,40 177.7,40.895 177.7,42 L177.7,44 C177.7,45.105 178.63975,46 179.8,46 L181.9,46 C183.06025,46 184,45.105 184,44 L184,42 C184,40.895 183.06025,40 181.9,40 M174.55,40 L172.45,40 C171.28975,40 170.35,40.895 170.35,42 L170.35,44 C170.35,45.105 171.28975,46 172.45,46 L174.55,46 C175.71025,46 176.65,45.105 176.65,44 L176.65,42 C176.65,40.895 175.71025,40 174.55,40 M169.3,42 L169.3,44 C169.3,45.105 168.36025,46 167.2,46 L165.1,46 C163.93975,46 163,45.105 163,44 L163,42 C163,40.895 163.93975,40 165.1,40 L167.2,40 C168.36025,40 169.3,40.895 169.3,42" id="grid-[#1526]"> </path> </g> </g> </g> </g></svg>
+                        <svg onclick="displayRow()" class="row_and_grid" width="24" height="24" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>table-rows</title> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon" transform="translate(42.666667, 106.666667)"> <path d="M3.55271368e-14,85.3333333 L106.666667,85.3333333 L106.666667,128 L3.55271368e-14,128 L3.55271368e-14,85.3333333 Z M3.55271368e-14,4.26325641e-14 L106.666667,4.26325641e-14 L106.666667,42.6666667 L3.55271368e-14,42.6666667 L3.55271368e-14,4.26325641e-14 Z M3.55271368e-14,170.666667 L106.666667,170.666667 L106.666667,213.333333 L3.55271368e-14,213.333333 L3.55271368e-14,170.666667 Z M3.55271368e-14,256 L106.666667,256 L106.666667,298.666667 L3.55271368e-14,298.666667 L3.55271368e-14,256 Z M149.333333,85.3333333 L426.666667,85.3333333 L426.666667,128 L149.333333,128 L149.333333,85.3333333 Z M149.333333,4.26325641e-14 L426.666667,4.26325641e-14 L426.666667,42.6666667 L149.333333,42.6666667 L149.333333,4.26325641e-14 Z M149.333333,170.666667 L426.666667,170.666667 L426.666667,213.333333 L149.333333,213.333333 L149.333333,170.666667 Z M149.333333,256 L426.666667,256 L426.666667,298.666667 L149.333333,298.666667 L149.333333,256 Z" id="Combined-Shape"> </path> </g> </g> </g></svg>
+                    </div>
+                </div>
+                <hr>
+                <div class="main_bottom">
+                    <div class="product_container featured_products">
+                        {% for x in products %}
+                        <div class="product_card" onmouseenter="enter(this)" onmouseleave="leave(this)" id="{{x.id}}" onclick="goToProduct(this.id)">
+                            <div class="toHide">
+                                <img src="{{x.image1.url}}" alt="blue_slipper_img" width="100%" height="100%">
+                            </div>
+                            {% if x.image2 %}
+                                <div class="hidden_img">
+                                    <img src="{{x.image2.url}}" alt="wearing_blue_slipper" width="100%" height="100%">
+                                </div>
+                            {% endif %}
+                            <span>{{x.name}}</span>
+                            <span>LE {{x.price}}</span>
+                            {% if x.category == "slippers" %}
+                            <div class="sizes">
+                                <button id="{{x.size37}}" onmousemove="checkSize(this)">37</button>
+                                <button id="{{x.size38}}" onmousemove="checkSize(this)">38</button>
+                                <button id="{{x.size39}}" onmousemove="checkSize(this)">39</button>
+                                <button id="{{x.size40}}" onmousemove="checkSize(this)">40</button>
+                                <button id="{{x.size41}}" onmousemove="checkSize(this)">41</button>
+                            </div>
+                            {% endif %}
+                            <button class="add_to_cart_button">
+                                ADD TO CART
+                            </button>
+                        </div>
+                        <div class="product_row" id="{{x.id}}" onclick="goToProduct(this.id)">
+                            <div class="row_image">
+                                <img src="{{x.image1.url}}" alt="{{x.image1.alt}}" width="100%" height="100%">
+                            </div>
+                            <div class="row_text">
+                                <div class="top_text">
+                                    <h3>
+                                        {{x.name}}
+                                    </h3>
+                                    <p>
+                                        LE {{x.price}}
+                                    </p>
+                                </div>
+                                <hr>
+                                <p>
+                                    {% if x.des1 %}
+                                    <span>{{x.des1}}</span>
+                                    {% endif %}
+
+                                    {% if x.des2 %}
+                                    <span>{{x.des2}}</span>
+                                    {% endif %}
+
+                                    {% if x.des3 %}
+                                    <span>{{x.des3}}</span>
+                                    {% endif %}
+                                    
+                                    {% if x.des4 %}
+                                    <span>{{x.des4}}</span>
+                                    {% endif %}
+                                    
+                                    {% if x.des5 %}
+                                    <span>{{x.des5}}</span>
+                                    {% endif %}
+                                    
+                                    {% if x.des6 %}
+                                    <span>{{x.des6}}</span>
+                                    {% endif %}
+                                    
+                                    {% if x.des7 %}
+                                    <span>{{x.des7}}</span>
+                                    {% endif %}
+                                    
+                                    {% if x.des8 %}
+                                    <span>{{x.des8}}</span>
+                                    {% endif %}
+                                    
+                                    {% if x.des9 %}
+                                    <span>{{x.des9}}</span>
+                                    {% endif %}
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="pages">
+                    <button>
+                        1
+                    </button>
+                    <button>
+                        2
+                    </button>
+                    <button>
+                        3
+                    </button>
+                    <button>
+                        ...
+                    </button>
+                    <button>
+                        &#8594;
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

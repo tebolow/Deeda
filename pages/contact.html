@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div id="container">
+       <h1>
+        Contact us
+       </h1>
+       <hr>
+       <div class="contact_form">
+            <form method="post">
+                {% csrf_token %}
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name">
+            
+                <label for="email">EMAIL</label>
+                <input type="text" id="email" name="email">
+
+                <label for="phone_number">PHONE NUMBER</label>
+                <input type="text" id="phone_number" name="phone_number">
+
+                <label for="message">MESSAGE</label>
+                <textarea id="message" name="message" style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit" class="button">
+            </form>
+       </div>
+
+    </div>
+
+
+    {% endblock content %}

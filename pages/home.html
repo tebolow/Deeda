@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="slideshow-container">
+        {% for slide in slides %}
+            <div class="mySlides fade">
+                <img src="{{slide.image.url}}" width="100%" height="100%">
+            </div>
+        {% endfor %}
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+    </div>
+    <div style="text-align:center">
+        {% for slide in slides %}
+            <span class="dot" onclick="currentSlide(1)"></span> 
+        {% endfor %}
+    </div>
+
+    <div id="container">
+        <h1>
+            Slippers
+        </h1>
+        <div class="product_container">
+            {% for slipper in slippers %}
+            {% if forloop.counter < 5 %}
+                <div class="product_card" onmouseenter="enter(this)" onmouseleave="leave(this)" id="{{slipper.id}}" onclick="goToProduct(this.id)">
+                    <div class="toHide">
+                        <img src="{{slipper.image1.url}}" alt="blue_slipper_img" width="100%" height="100%">
+                    </div>
+                    {% if slipper.image2 %}
+                        <div class="hidden_img">
+                            <img src="{{slipper.image2.url}}" alt="wearing_blue_slipper" width="100%" height="100%">
+                        </div>
+                    {% endif %}
+                    <span>{{slipper.name}}</span>
+                    <span>LE {{slipper.price}}</span>
+                    {% if slipper.category == "slippers" %}
+                    <div class="sizes">
+                        <button id="{{slipper.size37}}" onmousemove="checkSize(this)">37</button>
+                        <button id="{{slipper.size38}}" onmousemove="checkSize(this)">38</button>
+                        <button id="{{slipper.size39}}" onmousemove="checkSize(this)">39</button>
+                        <button id="{{slipper.size40}}" onmousemove="checkSize(this)">40</button>
+                        <button id="{{slipper.size41}}" onmousemove="checkSize(this)">41</button>
+                    </div>
+                    {% endif %}
+                    <button class="add_to_cart_button">
+                        ADD TO CART
+                    </button>
+                </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        <hr>
+
+        <div id="marketing">
+            <div class="marketing_card">
+                <a href="http://127.0.0.1:8000/products/all">
+                    <img src="{% static 'img/11NEW_ARRIVALS_394x.avif' %}" alt="NEW_ARRIVALS_img" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="marketing_card">
+                <a href="http://127.0.0.1:8000/products/all">
+                    <img src="{% static 'img\111ON_SALE_NOW_1_394x.avif' %}" alt="ON_SALE_img" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="marketing_card">
+                <a href="http://127.0.0.1:8000/products/all">
+                    <img src="{% static 'img\1OFFERS_394x.avif' %}" alt="OFFERٍ_img" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <h1>
+            Featured Products
+        </h1>
+        
+        <div class="product_container featured_products">
+            {% for slipper in slippers %}
+            {% if forloop.counter < 8 %}
+                <div class="product_card" onmouseenter="enter(this)" onmouseleave="leave(this)" id="{{slipper.id}}" onclick="goToProduct(this.id)">
+                    <div class="toHide">
+                        <img src="{{slipper.image1.url}}" alt="blue_slipper_img" width="100%" height="100%">
+                    </div>
+                    {% if slipper.image2 %}
+                        <div class="hidden_img">
+                            <img src="{{slipper.image2.url}}" alt="wearing_blue_slipper" width="100%" height="100%">
+                        </div>
+                    {% endif %}
+                    <span>{{slipper.name}}</span>
+                    <span>LE {{slipper.price}}</span>
+                    {% if slipper.category == "slippers" %}
+                    <div class="sizes">
+                        <button id="{{slipper.size37}}" onmousemove="checkSize(this)">37</button>
+                        <button id="{{slipper.size38}}" onmousemove="checkSize(this)">38</button>
+                        <button id="{{slipper.size39}}" onmousemove="checkSize(this)">39</button>
+                        <button id="{{slipper.size40}}" onmousemove="checkSize(this)">40</button>
+                        <button id="{{slipper.size41}}" onmousemove="checkSize(this)">41</button>
+                    </div>
+                    {% endif %}
+                    <button class="add_to_cart_button">
+                        ADD TO CART
+                    </button>
+                </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        <hr>
+
+        <h1>
+            Shop The Look
+        </h1>
+
+    </div>
+
+    <div class="shop_the_look">
+        <div class="shop_the_look_container">
+            <img class="shop_the_look_img" src="{% static 'img\Untitled-3_fb600cc4-7101-41da-a98c-e6b062a6c1f5_295x.avif' %}" width="100%" height="100%">
+        </div>
+        <div class="shop_the_look_container">
+            <img class="shop_the_look_img" src="{% static 'img\Untitled-1_3a79ba18-beb2-43e6-8a8f-5762694674ce_295x.avif' %}" width="100%" height="100%">
+        </div>
+        <div class="shop_the_look_container">
+            <img class="shop_the_look_img" src="{% static 'img\5454_295x.avif' %}" width="100%" height="100%">
+        </div>
+        <div class="shop_the_look_container">
+            <img class="shop_the_look_img" src="{% static 'img\Untitled-1_602a3004-7dec-4526-aae8-af89898cf319_295x.avif' %}" width="100%" height="100%">
+        </div>
+        <div class="shop_the_look_container">
+            <img class="shop_the_look_img" src="{% static 'img\Untitled-7_37604154-726d-492a-87a9-d7beec7efc79_295x.avif' %}" width="100%" height="100%">
+        </div>
+        <div class="shop_the_look_container">
+            <img class="shop_the_look_img" src="{% static 'img\Untitled-5_9b924280-5c83-44f7-a614-3f61ed154a5d_295x.avif' %}" width="100%" height="100%">
+        </div>
+        <div class="shop_the_look_container">
+            <img class="shop_the_look_img" src="{% static 'img\Untitled-4_a7d4ba21-6c18-47a4-9a30-2798306a6a68_295x.avif' %}" width="100%" height="100%">
+        </div>
+        <div class="shop_the_look_container">
+            <img class="shop_the_look_img" src="{% static 'img\Untitled-6_f5cbd652-6ece-4f8f-bdda-8d9e93a79f69_295x.avif' %}" width="100%" height="100%">
+        </div>
+        <div class="shop_the_look_container">
+            <img class="shop_the_look_img" src="{% static 'img\Untitled-5_65ff567b-b23b-4f33-9783-2531dd6dbc6d_295x.avif' %}" width="100%" height="100%">
+        </div>
+        <div class="shop_the_look_container">
+            <img class="shop_the_look_img" src="{% static 'img\Untitled-2_7ac54989-cb14-49b7-873b-1e0c741fce9d_295x.avif' %}" width="100%" height="100%">
+        </div>
+        <div class="shop_the_look_container">
+            <img class="shop_the_look_img" src="{% static 'img\Untitled-4_7d39a6fe-aa1c-48cb-b2b4-885d34ef8377_295x.avif' %}" width="100%" height="100%">
+        </div>
+        <div class="shop_the_look_container">
+            <img class="shop_the_look_img" src="{% static 'img\Untitled-333_295x.avif' %}" width="100%" height="100%">
+        </div>
+        <button id="follow_us">FOLLOW US</button>
+    </div>
+    {% endblock content %}
